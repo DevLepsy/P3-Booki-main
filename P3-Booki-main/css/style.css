@@ -77,7 +77,7 @@ a {
   text-decoration: none;
 }
 
-.linkks:visited {
+.links:visited {
   color: var(--main-black-color);
 }
 
@@ -139,7 +139,6 @@ header {
   flex-direction: column;
   justify-content: space-between;
   gap: 35px;
-  margin-bottom: 35px;
 }
 
 /* search */
@@ -603,7 +602,7 @@ footer {
   }
 
   .search-and-filters {
-    margin: 0 20px 35px 20px;
+    margin: 0 20px 0px 20px;
   }
 
   .search-bar {
