@@ -83,7 +83,7 @@ a {
 }
 
 .main-container {
-  font-weight: 100%;
+  width: 100%;
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
