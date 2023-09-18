@@ -77,10 +77,7 @@ a {
   text-decoration: none;
 }
 
-.links:visited {
-  color: var(--main-black-color);
-}
-
+.links:visited,
 .links:active {
   color: var(--main-black-color);
 }
