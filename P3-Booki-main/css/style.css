@@ -83,7 +83,7 @@ a {
 }
 
 .main-container {
-  font-weight: 100%;
+  width: 100%;
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
@@ -103,14 +103,15 @@ header {
 
 .nav {
   display: flex;
-  justify-content: center;
-  width: 19%;
+  justify-content: flex-end;
+  width: 100%;
   padding: 0 25px;
   height: 35px;
 }
 
 .nav-list {
   display: flex;
+  width: 50%;
   justify-content: space-between;
   align-items: flex-end;
   list-style: none;
@@ -121,6 +122,7 @@ header {
 }
 
 .nav-link {
+  width: 100%;
   padding-top: 14px;
 }
 
@@ -227,8 +229,10 @@ header {
 
 .filters-btns {
   display: flex;
+
   justify-content: space-between;
-  gap: 15px;
+  align-self: stretch;
+  gap: 20px;
 }
 
 .filters-btn {
@@ -574,15 +578,13 @@ footer {
     padding: 0px;
   }
 
-  .header-list {
+  .nav-list {
     width: 100%;
-    align-items: flex-start;
   }
 
-  .header-list li {
+  .nav-list li {
     width: 50%;
   }
-
   .nav-link {
     display: block;
     text-align: center;
@@ -631,8 +633,7 @@ footer {
   }
 
   .filters-btns {
-    flex-wrap: wrap;
-    width: 100%;
+    flex-flow: row wrap;
     gap: 0px;
   }
 
@@ -685,6 +686,7 @@ footer {
   }
 
   .hebergements-cards {
+    display: flex;
     flex-direction: column;
     margin-bottom: 15px;
   }
@@ -697,6 +699,29 @@ footer {
     margin-top: 15px;
   }
 
+  .hebergements-cards > a:nth-child(1) {
+    order: 1;
+  }
+
+  .hebergements-cards > a:nth-child(2) {
+    order: 6;
+  }
+
+  .hebergements-cards > a:nth-child(3) {
+    order: 3;
+  }
+
+  .hebergements-cards > a:nth-child(4) {
+    order: 4;
+  }
+
+  .hebergements-cards > a:nth-child(5) {
+    order: 2;
+  }
+
+  .hebergements-cards > a:nth-child(6) {
+    order: 5;
+  }
   .activites {
     margin-bottom: 35px;
   }
