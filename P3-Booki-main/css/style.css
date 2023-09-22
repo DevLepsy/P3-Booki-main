@@ -601,7 +601,7 @@ footer {
   }
 
   .search-and-filters {
-    margin: 0 20px 0px 20px;
+    padding: 0 20px;
   }
 
   .search-bar {
@@ -634,12 +634,15 @@ footer {
 
   .filters-btns {
     flex-flow: row wrap;
+    align-content: center;
     gap: 0px;
   }
 
   .filters-btn {
-    width: 34%;
+    width: 35%;
     margin-top: 20px;
+    justify-content: center;
+    text-align: center;
   }
 
   .filters-btn-txt {
